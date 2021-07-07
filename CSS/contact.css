@@ -1,0 +1,167 @@
+/* .icon img{
+    width: 40px;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo{
+  background: #9cb6ee;
+}
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #9cb6ee;
+}
+.contact .content {
+  max-width: 800px;
+  text-align: center;
+}
+.contact .content h2 {
+  font-size: 36px;
+  /* font-weight: 500; */
+  /* color: #555; */
+}
+
+.contact .content p {
+  font-weight: 300;
+}
+
+.hold {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.hold .contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hold .contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.hold .contactInfo .box .icon img {
+  min-width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hold .contactInfo .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.hold .contactInfo .box .text h3 {
+  font-weight: 900;
+}
+
+.contactForm {
+  width: 40%;
+  padding: 40px;
+  background: white;
+}
+
+.contactForm h2 {
+  font-size: 30px;
+  font-family: 500;
+}
+
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  resize: none;
+}
+
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.contactForm .contact-btn {
+  display: inline-block;
+  background: #3b6fff;
+  color: white;
+  padding: 12px 25px;
+  margin: 15px 0 25px 0;
+  border-radius: 30px;
+  transition: background 0.5s;
+}
+
+.contactForm .contact-btn:hover {
+  background: #1636eb;
+  cursor: pointer;
+}
+
+@media (max-width:1000px) {
+  .contact{
+    padding: 50px;
+  }
+
+  /* .hold{
+    flex-direction: column;
+  } */
+}
+
+@media  (max-width:800px){
+  .hold{
+    flex-direction: column;
+  }
+
+  .hold .contactInfo{
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .contactForm{
+    width: 100%;
+  }
+
+}
+
+@media (max-width:355px) {
+  .contact{
+    width: 357px;
+  }
+}
+
+@media (max-width:360px){
+  .logo{
+    width: 105%;
+  }
+}
